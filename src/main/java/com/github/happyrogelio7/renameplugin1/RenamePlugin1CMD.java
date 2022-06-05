@@ -32,7 +32,7 @@ public class RenamePlugin1CMD implements CommandExecutor {
         }
 
         ItemMeta itemMeta = player.getInventory().getItemInMainHand().getItemMeta();
-        itemMeta.setDisplayName(MessageColors.getMsgColor(String.valueOf(args)));
+        itemMeta.setDisplayName(MessageColors.getMsgColor(String.join(" ", args)));
         player.getInventory().getItemInMainHand().setItemMeta(itemMeta);
 
         return true;
