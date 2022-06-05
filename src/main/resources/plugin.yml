@@ -1,0 +1,10 @@
+name: RenamePlugin1
+version: '${project.version}'
+main: com.github.happyrogelio7.renameplugin1.RenamePlugin1
+api-version: 1.16
+authors: [ HappyRogelio7, Kamila21Y ]
+description: RenamePlugin1
+website: https://github.com/HappyRogelio7/
+commands:
+  renameplugin1:
+    usage: /renameplugin1 <namecolor>
