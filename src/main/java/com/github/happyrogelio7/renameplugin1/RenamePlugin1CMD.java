@@ -27,12 +27,12 @@ public class RenamePlugin1CMD implements CommandExecutor {
         Player player = (Player) sender;
 
         if(args.length == 0){
-            player.sendMessage(MessageColors.getMsgColor("&cUsage: /renameplugin1 <name>"));
+            player.sendMessage(MessageColors.getMsgColor("&8[&aRenamePlugin1&8] &cUsage: /renameplugin1 <name>"));
             return true;
         }
 
         ItemMeta itemMeta = player.getInventory().getItemInMainHand().getItemMeta();
-        itemMeta.setDisplayName(MessageColors.getMsgColor(args[0]));
+        itemMeta.setDisplayName(MessageColors.getMsgColor(String.valueOf(args)));
         player.getInventory().getItemInMainHand().setItemMeta(itemMeta);
 
         return true;
